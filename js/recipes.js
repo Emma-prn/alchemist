@@ -37,7 +37,7 @@ const recipes = [
         ingredients: ["Rose", "Lavande", 'Eau'],
         name: "Breuvage de Clarté",
         category: "Basiques",
-        description: "Permet à son buveur de retrouver ses esprits. Souvent utilisée dans le cas d’une contusion ou d’un choc… ou aussi par les ivrognes…",
+        description: "Permet à son buveur de retrouver ses esprits. Souvent utilisée dans le cas d'une contusion ou d'un choc… ou aussi par les ivrognes…",
         secret: false
     },
     // Elemental
@@ -46,7 +46,7 @@ const recipes = [
         ingredients: ["Braise", "Eau"],
         name: "Fiole de Flames",
         category: "Élementaires",
-        description: "Feu tout prêt, utile si l’on ne sait pas en allumer un. Note : Ne pas laisser la fiole sans surveillance !",
+        description: "Feu tout prêt, utile si l'on ne sait pas en allumer un. Note : Ne pas laisser la fiole sans surveillance !",
         secret: false
     },
     {
@@ -62,7 +62,7 @@ const recipes = [
         ingredients: ["Braise", "Miel", "Eau"],
         name: "Potion de Chaleur",
         category: "Élementaires",
-        description: "À utiliser dans le cadre d’hivers rudes pour se réchauffer. Aussi utilisé pour les victimes d’hypothermie. Note : Penser à lui trouver un autre nom.",
+        description: "À utiliser dans le cadre d'hivers rudes pour se réchauffer. Aussi utilisé pour les victimes d'hypothermie. Note : Penser à lui trouver un autre nom.",
         secret: false
     },
     {
@@ -70,7 +70,7 @@ const recipes = [
         ingredients: ["Pierre", "Braise", "Eau"],
         name: "Essence Ardente",
         category: "Élementaires",
-        description: "Permet à son buveur de devenir résistant aux flammes. Souvent utilisée par les chasseurs de monstres. Notes : Bien rappeler qu’il y a une limite de temps.",
+        description: "Permet à son buveur de devenir résistant aux flammes. Souvent utilisée par les chasseurs de monstres. Notes : Bien rappeler qu'il y a une limite de temps.",
         secret: false
     },
     {
@@ -78,7 +78,7 @@ const recipes = [
         ingredients: ["Pierre", "Éclat de glace", "Eau"],
         name: "Extrait Hivernal",
         category: "Élementaires",
-        description: "Procure une résistance aux très basses températures. Utile pour les personnes s’aventurant dans les zones enneigées. Note : N’empêche pas de devenir un glaçon en cas de rencontre avec de l’eau.",
+        description: "Procure une résistance aux très basses températures. Utile pour les personnes s'aventurant dans les zones enneigées. Note : N'empêche pas de devenir un glaçon en cas de rencontre avec de l'eau.",
         secret: false
     },
     // Dangerous
@@ -87,7 +87,7 @@ const recipes = [
         ingredients: ["Venin", "Eau"],
         name: "Poison",
         category: "Dangereuses",
-        description: "Une seule goutte est déjà dangereuse, alors une bouteille complète… Je n’ai en aucun cas envie de me retrouver la cible de ça.",
+        description: "Une seule goutte est déjà dangereuse, alors une bouteille complète… Je n'ai en aucun cas envie de me retrouver la cible de ça.",
         secret: false
     },
     {
@@ -95,7 +95,7 @@ const recipes = [
         ingredients: ["Champignon", "Venin", "Eau"],
         name: "Venin Concentré",
         category: "Dangereuses",
-        description: "Comme si la version de base n’était pas suffisante, il fallait vraiment qu’on le rende plus dangereux ! Note : L’odeur est assez forte.",
+        description: "Comme si la version de base n'était pas suffisante, il fallait vraiment qu'on le rende plus dangereux ! Note : L'odeur est assez forte.",
         secret: false
     },
     {
@@ -103,7 +103,7 @@ const recipes = [
         ingredients: ["Venin", "Baie", "Aile de Chauve-souris"],
         name: "Baie de Minuit",
         category: "Dangereuses",
-        description: "Une mixture mortelle au goût sucré, assez semblable à une tisane que l’on prend avant d’aller se coucher… Pourquoi est-ce que des clients commandent ça…",
+        description: "Une mixture mortelle au goût sucré, assez semblable à une tisane que l'on prend avant d'aller se coucher… Pourquoi est-ce que des clients commandent ça…",
         secret: false
     },
     {
@@ -111,7 +111,7 @@ const recipes = [
         ingredients: ["Venin", "Braise", "Eau"],
         name: "Solution Mordante",
         category: "Dangereuses",
-        description: "Préparation extrêmement corrosive capable d’attaquer certains matériaux. Note : Faire extrêmement attention et éviter tout contact avec la peau… et les meubles.",
+        description: "Préparation extrêmement corrosive capable d'attaquer certains matériaux. Note : Faire extrêmement attention et éviter tout contact avec la peau… et les meubles.",
         secret: false
     },
     {
@@ -128,7 +128,7 @@ const recipes = [
         ingredients: ["Poussière de Lune", "Aile de Chauve-souris", "Eau"],
         name: "Élixir Nocturne",
         category: "Étranges",
-        description: "Permet de voir dans l’obscurité… Je devrais en prendre plus souvent, cela m’éviterait de me prendre les meubles de la cabane quand je vais me chercher un verre d’eau en pleine nuit.",
+        description: "Permet de voir dans l'obscurité… Je devrais en prendre plus souvent, cela m'éviterait de me prendre les meubles de la cabane quand je vais me chercher un verre d'eau en pleine nuit.",
         secret: false
     },
     {
@@ -136,7 +136,7 @@ const recipes = [
         ingredients: ["Poussière de Lune", "Cristal", "Eau"],
         name: "Sagesse Céleste",
         category: "Étranges",
-        description: "Dote son buveur de facultés mentales extraordinaires. Note : Ce n’est pas pour autant que vous devenez un devin !",
+        description: "Dote son buveur de facultés mentales extraordinaires. Note : Ce n'est pas pour autant que vous devenez un devin !",
         secret: false
     },
     {
@@ -144,7 +144,7 @@ const recipes = [
         ingredients: ["Aile de Chauve-souris", "Toile d'araignée", "Eau"],
         name: "Essence de Vent",
         category: "Étranges",
-        description: "Permet de flotter légèrement au-dessus du sol. Note : On parle de lévitation, pas de vol. Ne vous jetez pas d’une falaise !",
+        description: "Permet de flotter légèrement au-dessus du sol. Note : On parle de lévitation, pas de vol. Ne vous jetez pas d'une falaise !",
         secret: false
     },
     {
@@ -152,7 +152,7 @@ const recipes = [
         ingredients: ["Lavande", "Toile d'araignée", "Eau"],
         name: "Motus",
         category: "Étranges",
-        description: "Potion rendant son buveur muet pendant un laps de temps. Possède de multiples usages, allant jusqu’aux plaisanteries entre amis… ainsi qu’aux étudiants souhaitant faire croire à une extinction de voix.",
+        description: "Potion rendant son buveur muet pendant un laps de temps. Possède de multiples usages, allant jusqu'aux plaisanteries entre amis… ainsi qu'aux étudiants souhaitant faire croire à une extinction de voix.",
         secret: false
     },
     {
@@ -169,7 +169,7 @@ const recipes = [
         ingredients: ["Champignon", "Aile de Chauve-souris", "Eau"],
         name: "Essence Sauvage",
         category: "Créatures",
-        description: "Permet au buveur de se transformer en un animal, suivant l’échantillon intégré à la potion. Note : Ne jamais croire sur parole quelqu’un vous donnant cette potion, au risque de se retrouver sous une forme animale non désirée.",
+        description: "Permet au buveur de se transformer en un animal, suivant l'échantillon intégré à la potion. Note : Ne jamais croire sur parole quelqu'un vous donnant cette potion, au risque de se retrouver sous une forme animale non désirée.",
         secret: false
     },
     {
@@ -177,7 +177,7 @@ const recipes = [
         ingredients: ["Aile de Chauve-souris", "Baie", "Eau"],
         name: "Potion d'Agilité",
         category: "Créatures",
-        description: "Dote le buveur d’une agilité phénoménale, bien plus que celle des acrobates… Cela serait très pratique pour contrer ma maladresse…",
+        description: "Dote le buveur d'une agilité phénoménale, bien plus que celle des acrobates… Cela serait très pratique pour contrer ma maladresse…",
         secret: false
     },
     {
@@ -185,7 +185,7 @@ const recipes = [
         ingredients: ["Toile d'araignée", "Miel", "Eau"],
         name: "Toile en Bouteille",
         category: "Créatures",
-        description: "Mélange formant une toile extrêmement solide et gluante. Très bon filet de secours dans le cas d’une chute ou pour attraper quelqu’un. Note : Reste quand même très difficile de s’en détacher.",
+        description: "Mélange formant une toile extrêmement solide et gluante. Très bon filet de secours dans le cas d'une chute ou pour attraper quelqu'un. Note : Reste quand même très difficile de s'en détacher.",
         secret: false
     },
     {
@@ -218,7 +218,7 @@ const recipes = [
         ingredients: ["Poussière de Lune", "Cristal", "Rose", "Eau"],
         name: "Rosée Sélénite",
         category: "Avancées",
-        description: "Solution assez mystérieuse. Ses effets varient suivant la phase de la Lune lors de sa préparation… J’ai vraiment besoin de mieux la documenter…",
+        description: "Solution assez mystérieuse. Ses effets varient suivant la phase de la Lune lors de sa préparation… J'ai vraiment besoin de mieux la documenter…",
         secret: false
     },
     {
@@ -226,7 +226,7 @@ const recipes = [
         ingredients: ["Poussière de Lune", "Baie", "Herbes", "Eau"],
         name: "Élixir de Renaissance",
         category: "Avancées",
-        description: "Potion permettant de soigner totalement une personne se trouvant aux portes de la mort. Note : On parle de soigner une personne encore en vie, pas de ramener quelqu’un d’entre les morts !",
+        description: "Potion permettant de soigner totalement une personne se trouvant aux portes de la mort. Note : On parle de soigner une personne encore en vie, pas de ramener quelqu'un d'entre les morts !",
         secret: false
     },
     {
@@ -240,9 +240,9 @@ const recipes = [
     {
         id: "ame",
         ingredients: ["Herbes", "Cristal", "Poussière de Lune", "Eau"],
-        name: "Retour d’Âme",
+        name: "Retour d'Âme",
         category: "Avancées",
-        description: "À verser sur une tombe pour en faire revenir l’esprit… Je devrais peut-être faire ça avec la tombe d’un maître alchimiste, je suis sûr que j’apprendrais plein de nouvelles choses…",
+        description: "À verser sur une tombe pour en faire revenir l'esprit… Je devrais peut-être faire ça avec la tombe d'un maître alchimiste, je suis sûr que j'apprendrais plein de nouvelles choses…",
         secret: false
     },
     /// Secrets
@@ -259,7 +259,7 @@ const recipes = [
         ingredients: ["Rose", "Poussière de Lune", "Éclat de glace", "Eau"],
         name: "Larmes de Lune",
         category: "Secret",
-        description: "Forme de petits cristaux glacés scintillants à la lueur de la lune… J’aime bien leur goût de rose…",
+        description: "Forme de petits cristaux glacés scintillants à la lueur de la lune… J'aime bien leur goût de rose…",
         secret: true
     },
     {
@@ -267,7 +267,7 @@ const recipes = [
         ingredients: ["Braise", "Cristal", "Miel", "Pierre"],
         name: "Cœur de Dragon",
         category: "Secret",
-        description: "Forme une magnifique pierre incandescente... et c’est tout… mais très utile en hiver, ça tient chaud !",
+        description: "Forme une magnifique pierre incandescente... et c'est tout… mais très utile en hiver, ça tient chaud !",
         secret: true
     }
 ];
