@@ -22,16 +22,19 @@ const ingredients = document.querySelectorAll('.ingredient');
 const cauldron = document.getElementById('cauldron');
 
 let draggedIngredient = null;
+let selectedContainer = document.getElementById("selected");
 let discoveredRecipes = JSON.parse(localStorage.getItem("discoveredRecipes")) || [];
 
 ingredients.forEach(ingredient => {
     ingredient.addEventListener("dragstart", () => {
         draggedIngredient = ingredient;
+        selectedContainer.innerText = draggedIngredient.title;
         ingredient.classList.add("dragging");
     });
 
     ingredient.addEventListener("dragend", () => {
         draggedIngredient = null;
+        selectedContainer.innerText = "";
         ingredient.classList.remove("dragging");
     });
 })
@@ -53,7 +56,12 @@ function allowDrop(c) {
 // Tap for Mobile
 ingredients.forEach(ingredient => {
     ingredient.addEventListener("click", (e) => {
+        selectedContainer.innerText = ingredient.title;
         cauldron.appendChild(ingredient);
+
+        setTimeout(() => {
+            selectedContainer.innerText = "";
+        }, 1000);
     });
 });
 
