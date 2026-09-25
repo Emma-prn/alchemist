@@ -2,7 +2,7 @@
 
 ## Crédits Images
 
-Game-icons.net
+Icônes trouvées sur [Game-icons.net](https://game-icons.net/)
 
 Lorc : bat-wing, crystal-growth, honeypot, hot-spices, ice-spear, rock, rose, scorpion, spider-web, wheat
 
