@@ -1,11 +1,19 @@
 const ingredientsContainer = document.getElementById('ingredients');
 for (let i = 0; i < ingredientsList.length; i++) {
     // Create DOM Element
+    let ingredient = ingredientsList[i];
     let aside = document.createElement('aside');
-    ingredientsContainer.appendChild(aside);
+    let img = document.createElement('img');
+    
     aside.draggable = true;
     aside.classList.add('ingredient');
-    aside.innerText = ingredientsList[i];
+    aside.title = ingredient["name"];
+    ingredientsContainer.appendChild(aside);
+
+    img.src = "img/" + ingredient["img"];
+    img.alt = ingredient["name"];
+    img.title = ingredient["name"];
+    aside.appendChild(img);
 }
 
 // Game Start
@@ -51,10 +59,11 @@ ingredients.forEach(ingredient => {
 
 function allowTap(c) {
     c.addEventListener("click", (e) => {
-        if (!e.target.classList.contains("ingredient")) {
+        let ingredient = e.target.closest(".ingredient");
+        if (!ingredient) {
             return;
         }
-        ingredientsContainer.appendChild(e.target);
+        ingredientsContainer.appendChild(ingredient);
     });
 }
 
@@ -70,7 +79,7 @@ const discoveredName = document.getElementById('discovered-name');
 const discoveredDescription = document.getElementById('discovered-description');
 mixButton.addEventListener("click", (e) => {
     e.preventDefault();
-    const selectedIngredients = [...cauldron.querySelectorAll(".ingredient")].map(ingredient => ingredient.innerText);
+    const selectedIngredients = [...cauldron.querySelectorAll(".ingredient")].map(ingredient => ingredient.title);
     const recipe = checkRecipe(selectedIngredients);
     
     if (recipe) {
