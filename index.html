@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Apprenti Alchimiste</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/ingredients.js"></script>
+    <script src="js/recipes.js"></script>
+    <script src="js/game.js" defer></script>
+</head>
+<body class="workshop">
+    <div style="padding: 5px;">
+        <header>
+            <h1 class="title">L'Apprenti Alchimiste</h1>
+            <nav class="top">
+                <a class="button" href="recipe-book.html">Livre de Recette</a>
+                <button class="button" popovertarget="guide">Guide</button>
+            </nav>
+        </header>
+        <div id="guide" popover="auto">
+            <section>
+                <h2>Guide</h2>
+                <p>
+                    Jeune apprenti alchimiste, mais tu es face à un "petit" problème. <br>
+                    À la suite d'un accident avec une potion, ton manuel contenant toutes les recettes a disparu. <br> 
+                    À toi d'essayer d'en écrire un nouveau en expérimentant avec les ingrédients à ta disposition.
+                </p>
+                <h3>Sur Desktop</h3>
+                <p>
+                    Prends un des ingrédients et dépose-le dans le chaudron. <br>
+                    Si tu ne veux plus d'un ingrédient, tu peux le remettre avec les autres. 
+                    <br>
+                    <br>
+                    Il est également possible de cliquer directement sur un ingrédient pour le mettre dans le chaudron. <br>
+                    Clique sur un ingrédient dans le chaudron pour le remettre avec les autres.
+                </p>
+                <h3>Sur Mobile</h3>
+                <p>
+                    Clique sur un ingrédient pour le mettre dans le chaudron. <br>
+                    Clique sur un ingrédient dans le chaudron pour le remettre avec les autres.
+                </p>
+            </section>
+            <button class="button" type="button" popovertarget="guide" popovertargetaction="hide">Retour à l'atelier</button>
+        </div>
+        <div class="table">
+            <div id="ingredients"></div>
+            <div class="cauldron-container">
+                <div id="cauldron"></div>
+                <button class="button" id="mix">Mélanger</button>
+            </div>
+        </div>
+        <div id="message" popover="auto">
+            <h2 id="discovered-name"></h2>
+            <p id="discovered-description"></p>
+            <button class="button" type="button" popovertarget="message" popovertargetaction="hide">Retour à l'atelier</button>
+        </div>
+    </div>
+</body>
+</html>
